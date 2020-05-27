@@ -15,7 +15,7 @@ import com.test.specification.TestSpecificationGenerator;
 
 @Service
 @Transactional
-public class MoviesServiceImpl extends BaseAuditableService<Test> implements TestService{
+public class TestServiceImpl extends BaseAuditableService<Test> implements TestService{
 
 	@Autowired
 	private TestDao testDao;
@@ -24,8 +24,8 @@ public class MoviesServiceImpl extends BaseAuditableService<Test> implements Tes
 	private TestSpecificationGenerator testSpecificationGenerator;
 	
 	@Override
-	public Test save(Test movies) {
-		return testDao.save(movies);
+	public Test save(Test test) {
+		return testDao.save(test);
 	}
 
 	@Override

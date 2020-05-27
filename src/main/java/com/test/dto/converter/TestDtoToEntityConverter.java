@@ -1,4 +1,4 @@
-package com.test.dto2entity;
+package com.test.dto.converter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
@@ -11,12 +11,12 @@ import com.test.entity.Test;
 @Component
 public class TestDtoToEntityConverter implements Converter<TestDto, Test> {
 	@Autowired
-	private TestDao moviesDao;
+	private TestDao testDao;
 
 	public Test convert(TestDto source) {
 		Test target = new Test();
 		if (source.getId() != null) {
-			Test target1 = moviesDao.findById(source.getId()).orElseThrow(null);
+			Test target1 = testDao.findById(source.getId()).orElseThrow(null);
 			target.setTitle(target1.getTitle());
 			target.setId(target1.getId());
 			target.setChainId(target1.getChainId());

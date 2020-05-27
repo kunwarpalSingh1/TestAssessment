@@ -1,4 +1,4 @@
-package com.test.dto2entity;
+package com.test.dto.converter;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;

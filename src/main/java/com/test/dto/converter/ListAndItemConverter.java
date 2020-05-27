@@ -1,4 +1,4 @@
-package com.test.converter.base;
+package com.test.dto.converter;
 
 import java.util.List;
 import java.util.stream.Collectors;

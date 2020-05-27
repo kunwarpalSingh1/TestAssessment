@@ -1,8 +1,7 @@
-package com.test.entity2Dto;
+package com.test.dto.converter;
 
 import org.springframework.stereotype.Component;
 
-import com.test.converter.base.ListAndItemConverter;
 import com.test.dto.TestDto;
 import com.test.entity.Test;
 

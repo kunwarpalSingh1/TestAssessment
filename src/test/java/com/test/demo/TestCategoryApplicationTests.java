@@ -24,7 +24,7 @@ class TestCategoryApplicationTests extends AbstractTest {
 
 	// TODO:Uncomment commented code before invoke these methods
 	// @Test
-	public void getMoviesList() throws Exception {
+	public void getTestList() throws Exception {
 		String uri = "/test";
 		MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri).accept(MediaType.APPLICATION_JSON_VALUE))
 				.andReturn();
@@ -48,7 +48,7 @@ class TestCategoryApplicationTests extends AbstractTest {
 
 	// TODO:Uncomment commented code before invoke these methods
 	// @Test
-	public void deleteMovies() throws Exception {
+	public void deleteTest() throws Exception {
 		String uri = "/test/9";
 		MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.delete(uri)).andReturn();
 		int status = mvcResult.getResponse().getStatus();

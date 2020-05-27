@@ -10,4 +10,4 @@ FROM openjdk:11-jre
 WORKDIR /app
 COPY --from=builder /workspace/app/target .
 EXPOSE 8890
-ENTRYPOINT ["java","-jar", "./MoviesCategory-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar", "./Category-0.0.1-SNAPSHOT.jar"]

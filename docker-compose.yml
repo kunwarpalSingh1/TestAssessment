@@ -7,7 +7,7 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_DATABASE: 'assessmenttest'
+      MYSQL_DATABASE: 'test'
       # So you don't have to use root, but you can if you like
       MYSQL_USER: 'root'
       # You can use whatever password you like
@@ -20,7 +20,7 @@ services:
     volumes:
       - my-db:/var/lib/mysql
   # App backend service
-  moviesapi:
+  testapi:
     # Configuration for building the docker image for the backend service
     build:
       context: . # Use an image built from the specified dockerfile in the current directory.

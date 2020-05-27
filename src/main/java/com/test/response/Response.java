@@ -9,7 +9,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.test.dto2entity.ResponseValidationErrorDto;
+import com.test.dto.converter.ResponseValidationErrorDto;
 import com.test.exception.ApplicationException;
 import com.test.exception.BusinessException;
 import com.test.exception.BusinessExceptionType;
